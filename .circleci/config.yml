@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t TheSubtleArt/around .
+          docker build -t thesubtleart/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push TheSubtleArt/around
+          docker push thesubtleart/around
